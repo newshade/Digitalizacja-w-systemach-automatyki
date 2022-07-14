@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<products>
+  <product>
+    <book id="1134" timestamp="2022:07:09T19:58:20.192085772" name="Digitalizacja_w_systemach_automatyki"></book>
+  </product>
+  <product>
+    <table id="9003" timestamp="2022:05:13T13:52:07.192432772" name="Kuchenny_jesionowy"></table>
+  </product>
+  <product>
+    <lamp id="10455" timestamp="2022:05:13T12:01:01.192085772" name="Wiszaca_GOLD"></lamp>
+  </product>
+  <product>
+    <computer id="5" timestamp="2021:12:22T21:09:20.006085772" name="SIMATIC_IPC"></computer>
+  </product>
+  <product>
+    <door id="211" timestamp="2021:10:09T05:58:20.192085333" name="Wejsciowe_antywlamaniowe"></door>
+  </product>
+</products>

@@ -1,0 +1,181 @@
+{
+  "uuid": "7ee6547e-0cbc-4a0e-94d0-abdaf432485f",
+  "lastMigration": 20,
+  "name": "Digital API",
+  "endpointPrefix": "",
+  "latency": 0,
+  "port": 3000,
+  "hostname": "0.0.0.0",
+  "routes": [
+    {
+      "uuid": "ff1c6dc2-9a98-4ba9-9af3-32cba008eb42",
+      "documentation": "Lista 5 losowych produktów, w formie serii produkcyjnej",
+      "method": "get",
+      "endpoint": "products/batch",
+      "responses": [
+        {
+          "uuid": "28412229-8b9e-4230-ac01-939ed54ced39",
+          "body": "{\n  \"products\": [\n    {{#repeat (queryParam 'total' '5')}}\n    {\n      \"id\": {{ faker 'datatype.number' min=100 max=10000}},\n      \"name\": {{ faker 'commerce.product' }},\n      \"prodDate\": {{ faker 'date.past' }} \n    }\n    {{/repeat}}\n  ],\n  \"total\": 5\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "Body zawiera 5 losowych produktów jako reprezentacja ostatniej serii produkcyjnej",
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "filePath": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "randomResponse": false,
+      "sequentialResponse": false
+    },
+    {
+      "uuid": "d8a483cc-45c7-48ca-9821-44f6e641cf98",
+      "documentation": "Pojedynczy, losowy produkt",
+      "method": "get",
+      "endpoint": "products/last",
+      "responses": [
+        {
+          "uuid": "5eae9c9e-2815-4125-bbd1-1ad4f32d6cdc",
+          "body": "{\n  \"product\": {\n    \"id\": {{ faker 'datatype.number' min=100 max=10000}},\n    \"name\": {{ faker 'commerce.product' }},\n    \"prodDate\": {{ faker 'date.past' }} \n  }\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "Pojedynczy, losowy produkt",
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "filePath": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "randomResponse": false,
+      "sequentialResponse": false
+    },
+    {
+      "uuid": "c4329b5c-2c12-4b7e-8453-f94bdd38411f",
+      "documentation": "Pojedynczy, losowy identyfikator produktu (zwracany jako wartość)",
+      "method": "get",
+      "endpoint": "products/randomId",
+      "responses": [
+        {
+          "uuid": "71e63cce-e943-4fb8-a8b4-5b6e4a36eb38",
+          "body": "{{ faker 'datatype.number' min=100 max=10000}}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "Pojedynczy, losowy identyfikator produktu",
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "filePath": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "randomResponse": false,
+      "sequentialResponse": false
+    },
+    {
+      "uuid": "7822f4a4-f8b3-41d3-be15-734ca161ed01",
+      "documentation": "Dodanie nowego produktu",
+      "method": "post",
+      "endpoint": "products/add",
+      "responses": [
+        {
+          "uuid": "e9e84fec-d36a-44d7-9538-5b619b4e5291",
+          "body": "{\n  \"result\": \"Poprawnie dodano element do listy produktów!\"\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "Dodanie nowego produktu za pomocą metody POST",
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "filePath": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        },
+        {
+          "uuid": "f1a78cfa-592f-4d53-b045-827773da077e",
+          "body": "{\n  \"result\": \"404 - Nie można odnaleźć zasobu /products/add\"\n}",
+          "latency": 0,
+          "statusCode": 404,
+          "label": "Nie można dodać produktu",
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "filePath": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false
+        }
+      ],
+      "enabled": true,
+      "randomResponse": false,
+      "sequentialResponse": false
+    }
+  ],
+  "proxyMode": false,
+  "proxyHost": "",
+  "proxyRemovePrefix": false,
+  "tlsOptions": {
+    "enabled": false,
+    "type": "CERT",
+    "pfxPath": "",
+    "certPath": "",
+    "keyPath": "",
+    "caPath": "",
+    "passphrase": ""
+  },
+  "cors": true,
+  "headers": [],
+  "proxyReqHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "proxyResHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ]
+}

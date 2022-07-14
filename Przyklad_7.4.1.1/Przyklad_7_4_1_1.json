@@ -1,0 +1,99 @@
+[
+    {
+        "id": "b4ab7689d22a1514",
+        "type": "tab",
+        "label": "Przyklad 7.4.1.1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "b6651bdd6d543450",
+        "type": "mindconnect",
+        "z": "b4ab7689d22a1514",
+        "name": "MindConnect Agent",
+        "configtype": "SHARED_SECRET",
+        "agentconfig": "{\"action\":\"delete\",\"clientId\":\"b027f4b27466409c8a53093b399d08bb\"}",
+        "privatekey": "",
+        "model": "",
+        "validate": true,
+        "validateevent": true,
+        "chunk": false,
+        "disablekeepalive": false,
+        "emitcontrol": false,
+        "datalakeonly": false,
+        "supressverbosity": false,
+        "retry": 3,
+        "parallel": 1,
+        "asyncduration": 10,
+        "x": 550,
+        "y": 120,
+        "wires": [
+            [
+                "f3a10a42eb2941d3"
+            ]
+        ]
+    },
+    {
+        "id": "0c3291d0472b1691",
+        "type": "function",
+        "z": "b4ab7689d22a1514",
+        "name": "Przygotowanie danych do MindSphere",
+        "func": "const values = [\n  {\n    \"dataPointId\": \"DP-RealValue_Avg\",\n    \"qualityCode\": \"0\",\n    \"value\": msg.payload.RealValue_0_Avg.toString()\n  },\n  {\n    \"dataPointId\": \"DP-IntValue_Avg\",\n    \"qualityCode\": \"0\",\n    \"value\": Math.floor(msg.payload.IntValue_1_Avg).toString()\n  }\n]\nmsg._time = new Date()\nmsg.payload=values\nreturn msg",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 250,
+        "y": 120,
+        "wires": [
+            [
+                "b6651bdd6d543450"
+            ]
+        ]
+    },
+    {
+        "id": "bd2451f32d68f788",
+        "type": "link in",
+        "z": "b4ab7689d22a1514",
+        "name": "",
+        "links": [
+            "3971cc68543de084"
+        ],
+        "x": 55,
+        "y": 120,
+        "wires": [
+            [
+                "0c3291d0472b1691"
+            ]
+        ]
+    },
+    {
+        "id": "f3a10a42eb2941d3",
+        "type": "debug",
+        "z": "b4ab7689d22a1514",
+        "name": "Podgląd wysyłanych danych",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 820,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "0655cc45867725c2",
+        "type": "comment",
+        "z": "b4ab7689d22a1514",
+        "name": "Transfer danych z bramki IoT do platformy chmurowej MindSphere",
+        "info": "",
+        "x": 280,
+        "y": 60,
+        "wires": []
+    }
+]

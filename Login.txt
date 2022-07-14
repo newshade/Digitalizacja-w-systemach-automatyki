@@ -1,0 +1,6 @@
+Dane logowania do projektów:
+
+   L: administrator
+   P: Sim@tic1518
+
+Wszystkie pozostałe elementy projektów wykorzystują hasło administratora: Sim@tic1518
