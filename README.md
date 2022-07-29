@@ -2,6 +2,8 @@
 ### Repozytorium stanowiące uzupełnienie do książki.
 #### wyd. Helion, 2022
 
+------
+
 Droga użykowiczko, Drogi użytkowniku,
 
 do Twojej dyspozycji oddaję specjalnie przygotowaną bibliotekę przykładów i gotowych projektów, dostępną w formie publicznego repozytorium. Choć większość przykładów i ćwiczeń opisywana jest dość szczegółowo w książce, każdy z nich przygotowany został w formie gotowych fragmentów kodu umieszczonych w przykładowym projekcie TIA Portal. Ponadto, część ćwiczeń w kolejnych rozdziałach książki realizowana jest w oparciu o funkcje opracowane na wcześniejszych stronach – wykorzystanie gotowego projektu pozwoli Ci więc zachować spójność i poprawną strukturę programu PLC, a także ułatwi realizację przykładów, które możesz oprzeć na gotowych szablonach.
@@ -11,6 +13,7 @@ W celu pobrania repozytorium na dysk twardy twojego komputera, możesz wykorzyst
 git clone https://github.com/newshade/Digitalizacja-w-systemach-automatyki.git
 ```
 lub pobrać zawartość repozytorium w formie archiwum ZIP:
+
 ![Pobieranie repozytorium za pomocą opcji Download ZIP](/Images/download_repo.png)
 
 W części elementów dostępnych w repozytorium (m.in. przykładowym projekcie TIA Portal) nałozone zostało hasło dostępowe. Część wymaga również identyfikacji podając dodatkowo nazwę użytkownika. Wszędzie tam, gdzie niezbędne jest uwierzytelnienie, wykorzystywane są poniższe dane:
