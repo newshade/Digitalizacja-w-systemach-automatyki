@@ -12,7 +12,7 @@ W celu pobrania repozytorium na dysk twardy twojego komputera, możesz wykorzyst
 ```
 git clone https://github.com/newshade/Digitalizacja-w-systemach-automatyki.git
 ```
-lub pobrać zawartość repozytorium w formie archiwum ZIP:
+lub skorzystać z opcji pobrania plików w formie archiwum ZIP, oferowanej przez serwis GitHub:
 
 ![Pobieranie repozytorium za pomocą opcji Download ZIP](/Images/download_repo.png)
 
