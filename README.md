@@ -1,4 +1,4 @@
-# Digitalizacja w systemach automatyki przemysłowej
+# Digitalizacja w systemach automatyki przemysłowej SIMATIC. Teoria, przykłady, ćwiczenia.
 ### Repozytorium stanowiące uzupełnienie do książki.
 #### wyd. Helion, 2022
 
