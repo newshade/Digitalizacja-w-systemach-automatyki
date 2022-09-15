@@ -82,4 +82,4 @@ Choć jest to pojęcie powszechnie już znane i obecne w branży od kilku lat, w
 - [Docker Desktop - instalator](https://docs.docker.com/desktop/windows/install/)
 - [Dodatek WSL2 - instalator](https://docs.microsoft.com/pl-pl/windows/wsl/install-manual#step-4---download-the-linux-kernel-update-package)
 - [Dokumentacja Docker-Compose](https://docs.docker.com/compose/compose-file/compose-file-v2/)
-- [Przykład aplikacji wielokontenerowej do akwizycji i wizualziacji danych](https://github.com/newshade/DataAcquisition_Example)
+- [Przykład aplikacji wielokontenerowej do akwizycji i wizualizacji danych](https://github.com/newshade/DataAcquisition_Example)
