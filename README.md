@@ -15,7 +15,7 @@ Praktyka pokazuje niestety, że choć otoczenie i technologie wokół nas pędz�
 
 > Ta analogia nie jest bezpodstawna – chcąc zachować konkurencyjność na rynku i móc oferować coraz lepsze produkty bądź usługi, niezbędne jest prowadzenie przedsiębiorstwa z duchem czasu, a nawet chęć wyprzedzenia konkurencji. W końcu jak powiedział kiedyś najbardziej utytułowany kanadyjski ho-keista Wayne Gretzky – Dobrego gracza poznaje się po tym, że zawsze jedzie tam gdzie akurat jest krążek. Wybitny zawodnik kieruje się tam, gdzie ten krążek będzie za chwilę.
 
-<br /><br />
+<br />
 
 W celu pobrania repozytorium na dysk twardy twojego komputera, możesz wykorzystać komendę dostepną w konsoli Git (system kontroli wersji musi być zainstalowany w Twoim systemie operacyjnym):
 ```
