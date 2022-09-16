@@ -1,6 +1,6 @@
 # Digitalizacja w systemach automatyki przemysłowej SIMATIC. Teoria, przykłady, ćwiczenia.
-### Repozytorium stanowiące uzupełnienie do książki.
-### wyd. Helion, 2022
+**Repozytorium stanowiące uzupełnienie do książki**
+**wyd. Helion, 2022**
 
 <img align="left" width="250px" src="/Images/DigiBook_Cover.png">
 Droga użykowiczko, Drogi użytkowniku,
