@@ -3,11 +3,11 @@
 **wyd. Helion, 2022**
 
 <img align="right" width="250px" src="/Images/DigiBook_Cover.png">
-
+<br /><br />
 Droga użykowiczko, Drogi użytkowniku,
 <br /><br />
 do Twojej dyspozycji oddaję specjalnie przygotowaną bibliotekę przykładów i gotowych projektów, dostępną w formie publicznego repozytorium. Choć większość przykładów i ćwiczeń opisywana jest dość szczegółowo w książce, każdy z nich przygotowany został w formie gotowych fragmentów kodu umieszczonych w przykładowym projekcie TIA Portal. Ponadto, część ćwiczeń w kolejnych rozdziałach książki realizowana jest w oparciu o funkcje opracowane na wcześniejszych stronach – wykorzystanie gotowego projektu pozwoli Ci więc zachować spójność i poprawną strukturę programu PLC, a także ułatwi realizację przykładów, które możesz oprzeć na gotowych szablonach.
-
+<br /><br />
 ### Digitalizacja
 
 Choć jest to pojęcie powszechnie już znane i obecne w branży od kilku lat, wiele firm produkcyjnych czy przetwórczych nie rozpoczęło jeszcze wdrażania rozwiązań opisywanych ogólnie jako digitalizacyjne. Rozumiemy przez nie szereg zagadnień, których celem jest zmniejszenie przepaści pomiędzy obszarami operacyjnym i informatycznym, rządzącymi współczesnym światem.
