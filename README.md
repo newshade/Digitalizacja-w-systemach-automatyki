@@ -2,7 +2,7 @@
 **Repozytorium stanowiące uzupełnienie do książki**<br />
 **wyd. Helion, 2022**
 
-<img align="right" width="250px" src="/Images/DigiBook_Cover.png">
+<img align="right" width="300px" src="/Images/DigiBook_Cover.png">
 
 Droga użykowiczko, Drogi użytkowniku,
 <br /><br />
