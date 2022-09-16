@@ -4,6 +4,7 @@
 
 ------
 
+![Okładka książki Digitalizacja w systemach automatyki SIMATIC. Teoria, przykłady, ćwiczenia.]<img align="left" src="/Images/DigiBook_Cover.png">
 Droga użykowiczko, Drogi użytkowniku,
 
 do Twojej dyspozycji oddaję specjalnie przygotowaną bibliotekę przykładów i gotowych projektów, dostępną w formie publicznego repozytorium. Choć większość przykładów i ćwiczeń opisywana jest dość szczegółowo w książce, każdy z nich przygotowany został w formie gotowych fragmentów kodu umieszczonych w przykładowym projekcie TIA Portal. Ponadto, część ćwiczeń w kolejnych rozdziałach książki realizowana jest w oparciu o funkcje opracowane na wcześniejszych stronach – wykorzystanie gotowego projektu pozwoli Ci więc zachować spójność i poprawną strukturę programu PLC, a także ułatwi realizację przykładów, które możesz oprzeć na gotowych szablonach.
